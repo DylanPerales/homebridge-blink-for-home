@@ -462,7 +462,7 @@ class Blink {
 
         const anonRegexMap = new Map();
         for (const [key, value] of anonMap.entries()) {
-            anonRegexMap.set(value, new RegExp(`\\b${key}\\b`, 'g'));
+            anonRegexMap.set(value, new RegExp(`\b${key}\b`, 'g'));
         }
 
         const anonymize = async p => {
